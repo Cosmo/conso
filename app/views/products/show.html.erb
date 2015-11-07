@@ -6,13 +6,28 @@
 </p>
 
 <p>
-  <strong>Price:</strong>
-  <%= @product.price %>
+  <strong>Price in cent:</strong>
+  <%= @product.price_in_cent %>
+</p>
+
+<p>
+  <strong>Photo url:</strong>
+  <%= @product.photo_url %>
 </p>
 
 <p>
   <strong>Url:</strong>
   <%= @product.url %>
+</p>
+
+<p>
+  <strong>Offer:</strong>
+  <%= @product.offer %>
+</p>
+
+<p>
+  <strong>Shop:</strong>
+  <%= @product.shop %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |

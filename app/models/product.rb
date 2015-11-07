@@ -1,8 +1,10 @@
 class Product
   include Mongoid::Document
-  field :name,      type: String
-  field :price,     type: String
-  field :photo,     type: String
-  field :shop,      type: String
-  field :url,       type: String
+  field :name,          type: String
+  field :price_in_cent, type: Integer
+  field :photo_url,     type: String
+  field :shop,          type: String
+  field :url,           type: String
+  field :offer,         type: Boolean
+  belongs_to :shop
 end

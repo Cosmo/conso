@@ -2,16 +2,10 @@
 
 one:
   name: MyString
-  price_in_cent: 1
-  photo_url: MyString
   url: MyString
-  offer: false
-  shop_id: 
+  photo_url: MyString
 
 two:
   name: MyString
-  price_in_cent: 1
-  photo_url: MyString
   url: MyString
-  offer: false
-  shop_id: 
+  photo_url: MyString

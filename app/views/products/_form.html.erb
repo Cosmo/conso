@@ -16,12 +16,24 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
+    <%= f.label :price_in_cent %><br>
+    <%= f.number_field :price_in_cent %>
+  </div>
+  <div class="field">
+    <%= f.label :photo_url %><br>
+    <%= f.text_field :photo_url %>
   </div>
   <div class="field">
     <%= f.label :url %><br>
     <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :offer %><br>
+    <%= f.check_box :offer %>
+  </div>
+  <div class="field">
+    <%= f.label :shop_id %><br>
+    <%= f.select :shop_id, Shop.all.map { |s| [s.name, s.id] } %>
   </div>
   <div class="actions">
     <%= f.submit %>
