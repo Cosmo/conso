@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount_in_cent: 1
+  shop_name: MyString
+  shop_id: 
+  product_id: 
+  user_id: 
+
+two:
+  amount_in_cent: 1
+  shop_name: MyString
+  shop_id: 
+  product_id: 
+  user_id: 

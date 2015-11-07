@@ -7,4 +7,5 @@ class Product
   field :url,           type: String
   field :offer,         type: Boolean
   belongs_to :shop
+  has_many :transactions
 end
