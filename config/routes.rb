@@ -63,5 +63,6 @@ Rails.application.routes.draw do
     resources :shops
     resources :products
     resources :users
+    resources :transactions
   end
 end
