@@ -42,3 +42,4 @@ group :development, :test do
 end
 
 gem 'mongoid'
+gem 'bootstrap-sass'
