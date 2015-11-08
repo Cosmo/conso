@@ -43,6 +43,6 @@ end
 
 gem 'mongoid'
 gem 'bootstrap-sass'
-gem 'rpush'
-gem 'rpush-mongoid', git: "https://github.com/dorthwein/rpush-mongoid.git"
+# gem 'rpush'
+# gem 'rpush-mongoid', git: "https://github.com/dorthwein/rpush-mongoid.git"
 
