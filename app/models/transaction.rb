@@ -1,5 +1,7 @@
 class Transaction
   include Mongoid::Document
+  include Mongoid::Timestamps
+  
   field :amount_in_cent, type: Integer
   field :shop_name, type: String
   field :booking_date, type: String

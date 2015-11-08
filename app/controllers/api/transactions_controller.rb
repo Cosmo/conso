@@ -1,7 +1,7 @@
 module Api
   class TransactionsController < ApplicationController
     def index
-      @transactions = Transaction.all
+      @transactions = Transaction.all.reverse
     end
     
     def create
@@ -11,6 +11,8 @@ module Api
         amount_in_cent: params[:amount_in_cent]
       )
       @transaction.save
+      puts "Saving transaction"
+      puts @transaction.errors
       head :no_content
     end
   end
