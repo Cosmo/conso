@@ -31,4 +31,17 @@ namespace :transactions do
       end
     end
   end
+
+  task :rename_shop_name => :environment do
+    Transaction.all.each do |transaction|
+      if transaction.shop_name
+        matcha = transaction.shop_name.match(/Ben: ([a-zA-Z0-9\.\s]+)\sns/)
+        if matcha
+          transaction.shop_name = matcha[1]
+          transaction.save
+          puts transaction.shop_name
+        end
+      end
+    end
+  end
 end
