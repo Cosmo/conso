@@ -4,6 +4,7 @@ json.products do
     json.name             product.name
     json.price_in_cent    product.price_in_cent
     json.url              product.url
+    json.like             (rand(2) == 0)
     json.photo_url        product.photo_url
     json.offer            product.offer
     if product.shop
